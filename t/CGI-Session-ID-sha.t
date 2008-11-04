@@ -5,7 +5,7 @@
 
 # change 'tests => 1' to 'tests => last_test_to_print';
 
-use Test::More tests => 3;
+use Test::More tests => 6;
 
 BEGIN {
     use_ok('CGI::Session::ID::sha');
@@ -13,9 +13,9 @@ BEGIN {
     use_ok('CGI::Session::ID::sha512');
 };
 
-require_ok('CGI::Session::ID::sha', 'Sucessfully loaded module for SHA');
-require_ok('CGI::Session::ID::sha256', 'Sucessfully loaded module for SHA-256');
-require_ok('CGI::Session::ID::sha512', 'Sucessfully loaded module for SHA-512');
+require_ok('CGI::Session::ID::sha');
+require_ok('CGI::Session::ID::sha256');
+require_ok('CGI::Session::ID::sha512');
 
 
 #########################

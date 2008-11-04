@@ -1,7 +1,7 @@
 # CGI::Session::ID::sha512 copyright 2008 Michael De Soto. This program is 
 # distributed under the terms of the GNU General Public License, version 3.
 #
-# $Id: sha512.pm 5 2008-11-03 01:53:25Z desoto@cpan.org $
+# $Id: sha512.pm 7 2008-11-04 04:27:03Z desoto@cpan.org $
 
 package CGI::Session::ID::sha512;
 
@@ -11,7 +11,7 @@ use warnings;
 use Digest::SHA;
 use CGI::Session::ErrorHandler;
 
-$CGI::Session::ID::sha512::VERSION = '1.00';
+$CGI::Session::ID::sha512::VERSION = '1.01';
 @CGI::Session::ID::sha512::ISA = qw/CGI::Session::ErrorHandler/;
 
 *generate = \&generate_id;
@@ -48,7 +48,7 @@ session. For example, when using the default table layout with MySQL you'd want
 to create a table like:
 
     CREATE TABLE sessions (
-        id CHAR(126) NOT NULL PRIMARY KEY,
+        id CHAR(128) NOT NULL PRIMARY KEY,
         a_session NOT NULL,
     );
 

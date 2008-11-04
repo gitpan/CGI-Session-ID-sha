@@ -1,4 +1,4 @@
-CGI-Session-ID-sha version 1.00
+CGI-Session-ID-sha version 1.01
 ===============================
 
 This is the README for the inital release of CGI::Session::ID::sha. This allows 

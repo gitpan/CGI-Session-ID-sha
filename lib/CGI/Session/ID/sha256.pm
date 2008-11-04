@@ -1,7 +1,7 @@
 # CGI::Session::ID::sha256 copyright 2008 Michael De Soto. This program is 
 # distributed under the terms of the GNU General Public License, version 3.
 #
-# $Id: sha256.pm 5 2008-11-03 01:53:25Z desoto@cpan.org $
+# $Id: sha256.pm 7 2008-11-04 04:27:03Z desoto@cpan.org $
 
 package CGI::Session::ID::sha256;
 
@@ -11,7 +11,7 @@ use warnings;
 use Digest::SHA;
 use CGI::Session::ErrorHandler;
 
-$CGI::Session::ID::sha256::VERSION = '1.00';
+$CGI::Session::ID::sha256::VERSION = '1.01';
 @CGI::Session::ID::sha256::ISA = qw/CGI::Session::ErrorHandler/;
 
 *generate = \&generate_id;
